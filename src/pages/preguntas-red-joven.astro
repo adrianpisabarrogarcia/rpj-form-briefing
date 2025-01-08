@@ -1,0 +1,171 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Preguntas específicas de la Red Jóven">
+  <Header />
+  <main class="w-full max-w-4xl mx-auto px-4 py-6">
+    <h1 class="p-2 text-4xl font-bold">
+      Preguntas específicas de la Red Joven de RPJ
+    </h1>
+    <form class="p-2 pt-5">
+      <!-- Sección 1: Objetivos -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">1. Objetivos:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="razon-ser" class="block text-gray-800 font-bold mb-2">
+              ¿Cuál es la razón de ser de la Red Joven? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="razon-ser"
+              name="razon-ser"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label for="metas" class="block text-gray-800 font-bold mb-2">
+              ¿Cuáles son las metas a corto, mediano y largo plazo? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="metas"
+              name="metas"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 2: Interacción -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">2. Interacción:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="canales" class="block text-gray-800 font-bold mb-2">
+              ¿Qué canales utiliza la red joven para interactuar con su
+              comunidad? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="canales"
+              name="canales"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label for="actividades" class="block text-gray-800 font-bold mb-2">
+              ¿Qué tipo de actividades o contenidos generan más participación? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="actividades"
+              name="actividades"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Crecimiento -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">3. Crecimiento:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="atraer-miembros"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo planteas atraer a nuevos miembros? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="atraer-miembros"
+              name="atraer-miembros"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="compromiso-fidelidad"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué estrategias utilizar para fomentar el compromiso y la
+              fidelidad? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="compromiso-fidelidad"
+              name="compromiso-fidelidad"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 4: Colaboración y sinergías -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">4. Colaboración y sinergías:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="relacion-proyectos"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo se relaciona la red joven con los otros proyectos de RPJ? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="relacion-proyectos"
+              name="relacion-proyectos"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="alianzas-fortalecer"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué alianzas podrían fortalecer la red? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="alianzas-fortalecer"
+              name="alianzas-fortalecer"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Siguiente -->
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-2 px-4 rounded-md text-lg font-bold hover:bg-gray-800 flex items-center justify-center"
+        >
+          Siguiente
+          <span class="ml-2">→</span>
+        </button>
+      </div>
+    </form>
+  </main>
+</Layout>
