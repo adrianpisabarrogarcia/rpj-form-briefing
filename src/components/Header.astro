@@ -1,13 +1,30 @@
 <header
   style="background-image: url('./header.webp')"
-  class="header bg-cover bg-center bg-no-repeat p-10"
+  class="header bg-cover bg-center bg-no-repeat p-10 flex justify-center items-center"
 >
-  <div class="bg-white rounded-md p-2 inline-block">
-    <img src="/logo-rpj.webp" alt="Logo RPJ" class="me-5 w-52 inline-block" />
-    <img
-      src="/logo-catolicos-en-red.webp"
-      alt="Logo Católicos En Red"
-      class="inline-block w-60"
-    />
+  <div
+    class="bg-white rounded-md p-4 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4"
+  >
+    <!-- Logo RPJ -->
+    <a href="https://rpj.es/" target="_blank" class="cursor-pointer"
+      ><img src="/logo-rpj.webp" alt="Logo RPJ" class="w-40 md:w-52" /></a
+    >
+    <!-- Logo Católicos En Red -->
+    <div>
+      <p class="italic text-sm text-center text-gray-400">
+        Con ayuda de:<p>
+          <a
+            href="https://www.catolicos.red/"
+            target="_blank"
+            class="cursor-pointer"
+            ><img
+              src="/logo-catolicos-en-red.webp"
+              alt="Logo Católicos En Red"
+              class="w-48 md:w-60"
+            /></a
+          >
+        </p>
+      </p>
+    </div>
   </div>
 </header>
