@@ -1,0 +1,142 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Preguntas específicas del Equipo Impusor sobre medición y éxito">
+  <Header />
+  <main class="w-full max-w-4xl mx-auto px-4 py-6">
+    <h1 class="p-2 text-4xl font-bold">
+      Preguntas específicas del Equipo Impusor sobre medición y éxito de RPJ
+    </h1>
+    <form class="p-2 pt-5">
+      <!-- Sección 1: Indicadores clave -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">1. Indicadores clave:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="metricas-exito"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué métricas utilizan para evaluar el éxito de su marketing y
+              comunicación? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="metricas-exito"
+              name="metricas-exito"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="impacto-proyectos"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo definen el impacto de cada uno de los proyectos? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="impacto-proyectos"
+              name="impacto-proyectos"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 2: Retroalimentación -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">2. Retroalimentación:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="opinion-audiencia"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo recogen la opinión de su audiencia sobre sus iniciativas? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="opinion-audiencia"
+              name="opinion-audiencia"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="mecanismos-ajuste"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué mecanismos utilizan para ajustar las estrategias según los
+              resultados obtenidos? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="mecanismos-ajuste"
+              name="mecanismos-ajuste"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Aprendizajes previos -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">3. Aprendizajes previos:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="lecciones-aprendidas"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué lecciones clave han aprendido de experiencias pasadas en
+              marketing y comunicación? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="lecciones-aprendidas"
+              name="lecciones-aprendidas"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="que-no-funciono"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué no ha funcionado y por qué? <span class="text-red-500"
+                >*</span
+              >
+            </label>
+            <textarea
+              id="que-no-funciono"
+              name="que-no-funciono"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Enviar -->
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-2 px-4 rounded-md text-lg font-bold hover:bg-gray-800 flex items-center justify-center"
+        >
+          Siguiente
+          <span class="ml-2">→</span>
+        </button>
+      </div>
+    </form>
+  </main>
+</Layout>

@@ -1,0 +1,245 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Preguntas específicas del Equipo Impusor sobre hitos y eventos en 2025"
+>
+  <Header />
+  <main class="w-full max-w-4xl mx-auto px-4 py-6">
+    <h1 class="p-2 text-4xl font-bold">
+      Preguntas específicas del Equipo Impusor sobre hitos y eventos en 2025 de
+      RPJ
+    </h1>
+    <form class="p-2 pt-5">
+      <!-- Sección 1: Calendario -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">1. Calendario:</h2>
+        <div>
+          <label for="eventos-clave" class="block text-gray-800 font-bold mb-2">
+            ¿Qué eventos o hitos clave están planificados para 2025? <span
+              class="text-red-500">*</span
+            >
+          </label>
+          <textarea
+            id="eventos-clave"
+            name="eventos-clave"
+            rows="4"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Sección 2: Objetivos específicos -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">2. Objetivos específicos:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="objetivos-eventos"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué buscas lograr con cada uno de los eventos planificados
+              (asistencia, visibilidad, recaudación, etc.)? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="objetivos-eventos"
+              name="objetivos-eventos"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="mensaje-clave"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué mensaje clave deseas transmitir en cada ocasión? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="mensaje-clave"
+              name="mensaje-clave"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Audiencia -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">3. Audiencia:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="publico-objetivo"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué públicos objetivo específicos esperas involucrar en cada
+              evento? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="publico-objetivo"
+              name="publico-objetivo"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="canales-efectivos"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué canales consideras más efectivos para alcanzar a estos
+              públicos? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="canales-efectivos"
+              name="canales-efectivos"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 4: Estrategias previas -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">4. Estrategias previas:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="estrategias-anteriores"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué estrategias o tácticas han funcionado en eventos anteriores? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="estrategias-anteriores"
+              name="estrategias-anteriores"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="aspectos-mejorar"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué aspectos consideras que necesitan mejorar? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="aspectos-mejorar"
+              name="aspectos-mejorar"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 5: Colaboradores y aliados -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">5. Colaboradores y aliados:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="organizaciones"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué organizaciones, instituciones o personas clave estarán
+              involucradas en los eventos? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="organizaciones"
+              name="organizaciones"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="apoyo-esperado"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué tipo de apoyo esperas de ellas? <span class="text-red-500"
+                >*</span
+              >
+            </label>
+            <textarea
+              id="apoyo-esperado"
+              name="apoyo-esperado"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 6: Medición del éxito -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">6. Medición del éxito:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="evaluacion-impacto"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo se evalúa el impacto y éxito de cada evento? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="evaluacion-impacto"
+              name="evaluacion-impacto"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="indicadores-relevantes"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué indicadores consideras más relevantes (asistencia,
+              participación, repercusión mediática)? <span class="text-red-500"
+                >*</span
+              >
+            </label>
+            <textarea
+              id="indicadores-relevantes"
+              name="indicadores-relevantes"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Siguiente -->
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-2 px-4 rounded-md text-lg font-bold hover:bg-gray-800 flex items-center justify-center"
+        >
+          Siguiente
+          <span class="ml-2">→</span>
+        </button>
+      </div>
+    </form>
+  </main>
+</Layout>
