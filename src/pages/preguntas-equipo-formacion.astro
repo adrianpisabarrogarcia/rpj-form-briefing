@@ -1,0 +1,178 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Preguntas específicas del equipo de formación">
+  <Header />
+  <main class="w-full max-w-4xl mx-auto px-4 py-6">
+    <h1 class="p-2 text-4xl font-bold">
+      Preguntas específicas del equipo de formación de RPJ
+    </h1>
+    <form class="p-2 pt-5">
+      <!-- Sección 1: Propuesta de valor -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">1. Propuesta de valor:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="valor-oferta"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué hace única la oferta de formación de RPJ? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="valor-oferta"
+              name="valor-oferta"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label for="habilidades" class="block text-gray-800 font-bold mb-2">
+              ¿Qué habilidades, conocimientos o actitudes buscas promover en la
+              formación de RPJ? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="habilidades"
+              name="habilidades"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 2: Público objetivo -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">2. Público objetivo:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="perfil-participantes"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cuál es el perfil ideal de los participantes en las actividades
+              formativas? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="perfil-participantes"
+              name="perfil-participantes"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="atraer-participantes"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo identificar y atraer a estos participantes? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="atraer-participantes"
+              name="atraer-participantes"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Promoción -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">3. Promoción:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="canales-difusion"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cuáles deberían de ser los principales canales de difusión para
+              los programas de formación? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="canales-difusion"
+              name="canales-difusion"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="marketing-efectivo"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué estrategias de marketing han sido efectivas en los cursos y
+              talleres? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="marketing-efectivo"
+              name="marketing-efectivo"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 4: Medición del impacto -->
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">4. Medición del impacto:</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="evaluacion-eficacia"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Cómo evaluar la eficacia de las actividades formativas? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="evaluacion-eficacia"
+              name="evaluacion-eficacia"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+          <div>
+            <label
+              for="indicadores-exito"
+              class="block text-gray-800 font-bold mb-2"
+            >
+              ¿Qué indicadores de éxito considerarías clave? <span
+                class="text-red-500">*</span
+              >
+            </label>
+            <textarea
+              id="indicadores-exito"
+              name="indicadores-exito"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Siguiente -->
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-2 px-4 rounded-md text-lg font-bold hover:bg-gray-800 flex items-center justify-center"
+        >
+          Siguiente
+          <span class="ml-2">→</span>
+        </button>
+      </div>
+    </form>
+  </main>
+</Layout>
