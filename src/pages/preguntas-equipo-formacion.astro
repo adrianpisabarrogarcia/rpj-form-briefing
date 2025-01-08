@@ -2,21 +2,7 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 
-// Detailed logging of the request
-console.log("Raw request URL:", Astro.request.url);
-console.log("Headers:", Object.fromEntries(Astro.request.headers));
-console.log("Method:", Astro.request.method);
-
-const currentUrl = new URL(Astro.request.url);
-console.log("Parsed URL:", {
-  full: currentUrl.toString(),
-  pathname: currentUrl.pathname,
-  search: currentUrl.search,
-  searchParams: Array.from(currentUrl.searchParams.entries()),
-});
-
-const uuid = currentUrl.searchParams.get("uuid");
-
+const uuid = Astro.url.searchParams.get("uuid");
 if (!uuid) {
   return Astro.redirect("/");
 }

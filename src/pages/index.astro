@@ -1,9 +1,22 @@
 ---
+export const prerender = false;
+
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 
+import { db } from "../lib/turso";
 import { v4 as uuidv4 } from "uuid";
-const uuid = uuidv4();
+
+if (Astro.request.method === "POST") {
+  const formData = await Astro.request.formData();
+  console.log(formData);
+  const uuid = uuidv4();
+  console.log(uuid);
+  const pages = "1-2-3-4-5-6"
+  const url = `/preguntas-generales?uuid=${uuid}&pages=${pages}`;
+  console.log(url);
+  return Astro.redirect(url);
+}
 ---
 
 <Layout title="Inicio">
@@ -23,7 +36,7 @@ const uuid = uuidv4();
         conocer tu opinión y ver cuál es la mejor estrategia para RPJ.
       </p>
     </section>
-    <form class="p-2 pt-5">
+    <form class="p-2 pt-5" method="POST">
       <!-- Campo: Nombre y Apellidos -->
       <div class="mb-6">
         <label for="nombre" class="block text-gray-800 font-bold mb-2">
@@ -35,6 +48,7 @@ const uuid = uuidv4();
           name="nombre"
           placeholder="Tu nombre completo"
           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+          required
         />
       </div>
 
@@ -49,6 +63,7 @@ const uuid = uuidv4();
           name="edad"
           placeholder="Tu edad"
           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-600 focus:border-transparent"
+          required
         />
       </div>
 

@@ -1,6 +1,11 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+const uuid = Astro.url.searchParams.get("uuid");
+if (!uuid) {
+  return Astro.redirect("/");
+}
 ---
 
 <Layout title="Preguntas específicas de la Red Jóven">
